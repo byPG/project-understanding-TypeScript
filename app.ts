@@ -1,16 +1,15 @@
-const person: {
-    name: string;
-    age: number;
-    hobbies: string[];
-    role: [number, string];
-} = {
-    name: 'Paulina',
-    age: 27,
-    hobbies: ['Sports', 'Cooking'],
-    role: [2, 'author'],
-};
+function combine(input1: number | string, input2: number | string) { //union types - pozwolenie na dwa typy danych
+    let result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    } else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+}
 
-let favoriteActivities: string[];
-favoriteActivities = ['Sports']
+    const combinedAges = combine(30, 23);
+    console.log(combinedAges);
 
-console.log(person)
+    const combineNames = combine('Max', 'Anna');
+    console.log(combineNames);

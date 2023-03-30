@@ -1,9 +1,14 @@
-var person = {
-    name: 'Paulina',
-    age: 27,
-    hobbies: ['Sports', 'Cooking'],
-    role: [2, 'author'],
-};
-var favoriteActivities;
-favoriteActivities = ['Sports'];
-console.log(person);
+function combine(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
+}
+var combinedAges = combine(30, 23);
+console.log(combinedAges);
+var combineNames = combine('Max', 'Anna');
+console.log(combineNames);
