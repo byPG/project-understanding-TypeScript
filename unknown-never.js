@@ -1,5 +1,6 @@
-var userInput; // typ jaki wprowadzi user nie jest znany (nie wiemy jeszcze); może przechowywać obojętnie jaki typ bez zwracania nam błędów
-var userName;
+"use strict";
+let userInput; // typ jaki wprowadzi user nie jest znany (nie wiemy jeszcze); może przechowywać obojętnie jaki typ bez zwracania nam błędów
+let userName;
 userInput = 5;
 userInput = 'Max';
 if (typeof userInput === 'string') {
