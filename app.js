@@ -1,3 +1,3 @@
 "use strict";
-const userName = 'Paulina';
-console.log(userName);
+const user1Name = 'Paulina';
+console.log(user1Name);
